@@ -8,10 +8,10 @@ export default function App() {
   const [filter, setFilter] = useState(filters[0]);
 
   return (
-    <div>
+    <>
       <TodoHeader filters={filters} filter={filter} onFilterChange={setFilter}/>
       <TodoList filter={filter}/>
-    </div>
+    </>
   );
 }
 
