@@ -1,10 +1,13 @@
 :root {
   --color-bg-dark: #f5f5f5;
   --color-bg: #fdfffd;
+  --color-drakmode-bg-dark: #22243b;
+  --color-darkmode-bg: #1e213d;
   --color-grey: #d1d1d1;
   --color-text: #22243b;
   --color-accent: #f16e03;
   --color-white: white;
+  --color-scrollbar: #aaa7a7;
 }
 
 body {
@@ -20,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  accent-color: var(--color-accent);
   background: rgb(147,147,147);
   background: linear-gradient(90deg, rgba(147,147,147,0.7317051820728291) 0%, rgba(105,110,255,0.709296218487395) 100%);
 }
@@ -55,4 +59,16 @@ ul {
 button {
   outline: none;
   border: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-scrollbar);
 }
