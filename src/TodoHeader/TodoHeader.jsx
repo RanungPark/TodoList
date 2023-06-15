@@ -7,7 +7,7 @@ export default function TodoHeader({filters, filter, onFilterChange}) {
   const {darkMode, toggleDarkMode} = useDarkMode();
   return (
     <header className={styles.header}>
-       <button onClick={toggleDarkMode}>
+       <button onClick={toggleDarkMode} className={styles.toggle}>
       {
         darkMode ?  <BsSunFill /> :  <BsFillMoonFill/>
       }   
